@@ -24,4 +24,5 @@ requires:
   JSON: 0
 resources:
   license: http://dev.perl.org/licenses/
-version: 0.04
+  repository: https://github.com/kazuho/p5-Parallel-Scoreboard
+version: 0.05

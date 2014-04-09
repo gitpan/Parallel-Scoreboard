@@ -8,7 +8,7 @@ use Fcntl qw(:flock);
 use IO::Handle;
 use POSIX qw(:fcntl_h);
 
-our $VERSION = '0.04';
+our $VERSION = '0.05';
 
 use Class::Accessor::Lite (
     ro => [ qw(base_dir worker_id) ],
@@ -128,7 +128,9 @@ sub _for_all {
             # the owner has died, remove status file
             close $fh;
             unlink $fn
-                or warn "failed to remove an obsolete scoreboard file:$fn:$!";
+                or
+                    not $!{ENOENT} and
+                    warn "failed to remove an obsolete scoreboard file:$fn:$!";
             next;
         }
         # invoke

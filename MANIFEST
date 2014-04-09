@@ -25,5 +25,6 @@ MANIFEST			This list of files
 META.yml
 MYMETA.json
 MYMETA.yml
+Parallel-Scoreboard-0.04.tar
 README
 t/00base.t

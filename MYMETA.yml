@@ -5,9 +5,9 @@ author:
 build_requires:
   ExtUtils::MakeMaker: 6.42
 configure_requires:
-  ExtUtils::MakeMaker: 0
+  ExtUtils::MakeMaker: 6.42
 dynamic_config: 0
-generated_by: 'ExtUtils::MakeMaker version 6.68, CPAN::Meta::Converter version 2.131560'
+generated_by: 'Module::Install version 1.00, CPAN::Meta::Converter version 2.131560'
 license: perl
 meta-spec:
   url: http://module-build.sourceforge.net/META-spec-v1.4.html
@@ -15,11 +15,14 @@ meta-spec:
 name: Parallel-Scoreboard
 no_index:
   directory:
-    - t
     - inc
+    - t
 requires:
   Class::Accessor::Lite: 0.05
   Filter::Util::Call: 0
   HTML::Entities: 0
   JSON: 0
+resources:
+  license: http://dev.perl.org/licenses/
+  repository: https://github.com/kazuho/p5-Parallel-Scoreboard
 version: 0.04
